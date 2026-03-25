@@ -1,6 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultores Ingeniería Legal SAS</title>
+<meta name="description" content="Consultores Ingeniería Legal SAS: asesoría en derecho civil, penal, laboral, comercial y SG-SST en Colombia.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Poppins',sans-serif;background:#f5f7fa;color:#1a1a1a}
+header{position:relative;background:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f') center/cover no-repeat;color:white;padding:120px 20px;text-align:center}
+header::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(13,43,69,0.7)}
+header h1, header p, header a{position:relative;z-index:2}
+header h1{font-size:3em;margin:0}
+header p{font-size:1.2em;margin-top:10px}
+nav{background:#0d2b45;padding:12px;text-align:center;position:sticky;top:0;z-index:10}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:600}
+section{padding:60px 20px;max-width:1100px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+#nosotros img{width:100%;max-height:300px;object-fit:cover;border-radius:12px;margin:20px 0}
+.cta{background:url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85') center/cover no-repeat;color:white;text-align:center;padding:70px;position:relative}
+.cta::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(13,43,69,0.7)}
+.cta h2,.cta p,.cta a{position:relative;z-index:2}
+footer{background:#0d2b45;color:white;text-align:center;padding:20px}
+.btn{background:#0d2b45;color:white;padding:12px 25px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:20px}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:22px;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+<h1>CONSULTORES INGENIERÍA LEGAL</h1>
+<p>Estudio, análisis y soluciones estratégicas para tus necesidades</p>
+<a class="btn" href="https://wa.me/573208307576">Contáctanos</a>
+</header>
+
+<nav>
+<a href="#nosotros">Nosotros</a>
+<a href="#campos">Campos de práctica</a>
+<a href="#servicios">Servicios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<section id="nosotros">
+<h2>No todos los negocios salen como quisiéramos</h2>
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Equipo">
+<p>Nuestro equipo multidisciplinario ofrece soluciones en derecho civil, comercial, laboral y penal. Contamos con ingenieros y abogados altamente capacitados enfocados en la mejora continua empresarial.</p>
+</section>
+
+<section id="campos">
+<h2>Campos de práctica</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f">
+<h3>Derecho Laboral</h3>
+<p>Condiciones laborales, despidos, obligaciones y sanciones.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555374018-13a8994ab246">
+<h3>Derecho Penal</h3>
+<p>Delitos, faltas y sanciones legales.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa">
+<h3>Derecho Civil</h3>
+<p>Relaciones privadas, contratos y responsabilidad civil.</p>
+</div>
+</div>
+</section>
+
+<section id="servicios">
+<h2>Nuestros Servicios</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85">Consultorías en derecho Civil, Comercial, Laboral y Penal</div>
+<div class="card"><img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">Consultorías en SG-SST</div>
+<div class="card"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">Conciliaciones</div>
+<div class="card"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">Consultorías Inmobiliarias</div>
+<div class="card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">Consultorías en Movilidad, Tránsito y Transporte</div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Agenda tu asesoría</h2>
+<p>Estamos listos para ayudarte</p>
+<a class="btn" href="https://wa.me/573208307576">Escríbenos por WhatsApp</a>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<form onsubmit="event.preventDefault(); alert('Te contactaremos pronto');">
+<input type="text" placeholder="Nombre" required><br><br>
+<input type="email" placeholder="Correo" required><br><br>
+<textarea placeholder="Cuéntanos tu caso" required></textarea><br><br>
+<button class="btn">Enviar</button>
+</form>
+</section>
+
+<footer>
+<p>📞 3208307576 | Consultores Ingeniería Legal SAS | Colombia</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/573208307576">💬</a>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consultores Ingeniería Legal SAS</title>
